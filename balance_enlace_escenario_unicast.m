@@ -23,7 +23,7 @@ Pn = NSD + 10*log10(BW);
 % SNR limitante del servicio utilizado
 C = 2.35*10^9; % Tasa de bits del servicio que ofrecemos (bits/s)
 SNR_limit = 2^(C/BW) - 1; % SNR limitante del servicio que ofrecemos
-
+SNR_limit = 10*log10(SNR_limit);
 
 %% Recogida de datos de las figuras
 % Recoger datos de la ganancia de la figura esc_azim (ganancia directa multicast)
