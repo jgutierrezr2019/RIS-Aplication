@@ -28,6 +28,7 @@ Pn = NSD + 10*log10(BW);
 C_Servicios = [0.025 0.1 0.4 1 2.35]*10^9;
 C = C_Servicios(N_Servicio); % Tasa de bits del servicio que ofrecemos (bits/s)
 SNR_limit = 2^(C/BW) - 1; % SNR limitante del servicio que ofrecemos
+SNR_limit = 10*log10(SNR_limit);
 
 % Establecer ángulos de elevación y azimuth en grados 
 % dirigidos a cada usuario (Componentes a misma altura)
